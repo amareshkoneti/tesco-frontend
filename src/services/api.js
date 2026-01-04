@@ -2,7 +2,7 @@
 // API service functions for interacting with the backend
 import axios from 'axios';
 
-const API_BASE = 'https://tesco-project.onrender.com/';
+const API_BASE = 'https://tesco-project.onrender.com';
 
 // ---------- Image Upload and Analysis APIs ----------
 export const uploadImage = async (file) => {
@@ -60,5 +60,6 @@ export const getFrequentPalettes = async () => {
   const response = await axios.get(`${API_BASE}/api/palettes/frequent`);
   return response.data;
 };
+
 
 
